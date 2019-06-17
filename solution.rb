@@ -1,7 +1,7 @@
 require 'sinatra'
 
-get '/' do
-  if params[:nombre] == "Juan" 
+get '/makers/:nombre' do
+  if params[:nombre] == "juan" 
    "<h1>Hola #{params[:nombre].capitalize}!</h1>"
   else
    "<h1>Hola desconocido!</h1>"
